@@ -1,4 +1,5 @@
 export type Volcano = {
+    _id: string;
     "Volcano Name": string,
     Country: string,
     Region: string,

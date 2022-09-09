@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import VolcanoItem from '../Composants/VolcanoItem'
 import { Volcano } from '../Models/Volcano'
 import VolcanoService from '../Services/Volcano.service'
 
@@ -25,7 +26,7 @@ const VolcanoListPage = () => {
         {
           volcanoes.map(
             (volcano) => 
-              <li key={volcano.id}>{volcano['Volcano Name']} {volcano.Status === "Fumarolic" ? '🌋' : null }</li>
+              <VolcanoItem volcano={volcano} />
             )
         }
       </ul>

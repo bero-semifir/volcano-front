@@ -1,12 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Router from './shared/Router';
 import VolcanoListPage from './Volcan/Pages/VolcanoList.page';
 
 function App() {
   return (
-    <div>
-      <VolcanoListPage />
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
